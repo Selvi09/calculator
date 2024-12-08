@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="screen">
+            <input type="text" id="display" disabled>
+        </div>
+        <div class="buttons">
+            <button class="btn" onclick="clearScreen()">
+                <img src="images/clear.png" alt="Clear">
+            </button>
+            <button class="btn" onclick="appendToScreen('%')">
+                <img src="images/percentage.png" alt="Percentage">
+            </button>
+            <button class="btn" onclick="deleteLast()">
+                <img src="images/delete.png" alt="Delete">
+            </button>
+            <button class="btn" onclick="appendToScreen('/')">
+                <img src="images/divide.png" alt="Divide">
+            </button>
+            <button class="btn" onclick="appendToScreen('7')">7</button>
+            <button class="btn" onclick="appendToScreen('8')">8</button>
+            <button class="btn" onclick="appendToScreen('9')">9</button>
+            <button class="btn" onclick="appendToScreen('*')">
+                <img src="images/multiply.png" alt="Multiply">
+            </button>
+            <button class="btn" onclick="appendToScreen('4')">4</button>
+            <button class="btn" onclick="appendToScreen('5')">5</button>
+            <button class="btn" onclick="appendToScreen('6')">6</button>
+            <button class="btn" onclick="appendToScreen('-')">
+                <img src="images/minus.png" alt="Minus">
+            </button>
+            <button class="btn" onclick="appendToScreen('1')">1</button>
+            <button class="btn" onclick="appendToScreen('2')">2</button>
+            <button class="btn" onclick="appendToScreen('3')">3</button>
+            <button class="btn" onclick="appendToScreen('+')">
+                <img src="images/plus.png" alt="Plus">
+            </button>
+            <button class="btn" onclick="appendToScreen('0')">0</button>
+            <button class="btn" onclick="appendToScreen('.')">.</button>
+            <button class="btn equal" onclick="calculateResult()">
+                <img src="images/equal.png" alt="Equal">
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
